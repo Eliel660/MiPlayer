@@ -1,1 +1,1 @@
-# MiPlayer
+# MiPlayer App
