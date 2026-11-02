@@ -9,7 +9,7 @@ jobs:
         with: { distribution: temurin, java-version: 17 }
       - uses: gradle/actions/setup-gradle@v4
         with: { gradle-version: 8.7 }
-      - run: unzip "MiPlayer*.zip"
+      - run: unzip "MiPlayer.zip"
       - run: echo "android.useAndroidX=true" > MiPlayer/gradle.properties
       - run: echo "org.gradle.jvmargs=-Xmx3g" >> MiPlayer/gradle.properties
       - run: echo "kotlin.daemon.jvmargs=-Xmx2g" >> MiPlayer/gradle.properties
